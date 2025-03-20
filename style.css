@@ -1,57 +1,56 @@
-body{
-    background-color: rgb(255, 255, 255);
+body {
+  background-color: rgb(255, 255, 255);
 }
 .dropzone {
-    min-height: 200px; /* Asegura que las cajas tengan una altura adecuada */
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .draggable {
-    display: inline-block;
-    padding: 5px 10px;
-    border: 1px solid gray;
-    cursor: grab;
-    margin: 5px;
-    font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid gray;
+  cursor: grab;
+  margin: 5px;
+  font-weight: bold;
 }
 
-
 .box {
-    width: 200px;
-    height: 300px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
+  width: 200px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
 }
 
 .drag-over {
-    background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
-.font-title{
-    font-family: oblique bold 120% cursive;
+.font-title {
+  font-family: oblique bold 120% cursive;
 }
 
-.img-content{
-    height: auto;
-    width: 800px;
+.img-content {
+  height: auto;
+  width: 800px;
 }
 
-.content-boxes{
-    background-color: #65c2d6;
+.content-boxes {
+  background-color: #65c2d6;
 }
 
-.text-question{
-    font-size: 30px;
+.text-question {
+  font-size: 30px;
 }
 
-.img-fluid{
-    height: auto;
-    width: 200px;
+.img-fluid {
+  height: auto;
+  width: 200px;
 }
