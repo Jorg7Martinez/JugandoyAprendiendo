@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aprendiendo a Programar</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="text-center">
+        <img src="image.png" class="img-content" />
+      </div>
+
+      <hr />
+      <div class="d-flex align-items-center justify-content-center">
+        <img src="roboto.png" class="img-fluid">
+        <div class="text-center me-3">
+            <p class="text-question"><strong>¿Cómo jugar?</strong></p>
+            <p>
+                Arrastra un cuadrito con el mouse. <br />Suéltalo en la caja correcta.
+            </p>
+            <p><strong>¡Acierta todas y gana! </strong></p>
+        </div>
+        
+    </div>
+    
+      <hr>
+      <!-- Palabras para arrastrar -->
+      <div class="mt-4 text-center">
+        <span
+          class="draggable"
+          draggable="true"
+          ondragstart="drag(event)"
+          id="for"
+          data-category="bucles"
+          >FOR</span
+        >
+        <span
+          class="draggable"
+          draggable="true"
+          ondragstart="drag(event)"
+          id="while"
+          data-category="bucles"
+          >WHILE</span
+        >
+        <span
+          class="draggable"
+          draggable="true"
+          ondragstart="drag(event)"
+          id="if"
+          data-category="condicionales"
+          >IF</span
+        >
+        <span
+          class="draggable"
+          draggable="true"
+          ondragstart="drag(event)"
+          id="else"
+          data-category="condicionales"
+          >ELSE</span
+        >
+        <span
+          class="draggable"
+          draggable="true"
+          ondragstart="drag(event)"
+          id="or"
+          data-category="logicos"
+          >OR</span
+        >
+        <span
+          class="draggable"
+          draggable="true"
+          ondragstart="drag(event)"
+          id="and"
+          data-category="logicos"
+          >AND</span
+        >
+        <span
+          class="draggable"
+          draggable="true"
+          ondragstart="drag(event)"
+          id="not"
+          data-category="logicos"
+          >NOT</span
+        >
+        <span
+          class="draggable"
+          draggable="true"
+          ondragstart="drag(event)"
+          id="mayor_que"
+          data-category="comparadores"
+          >></span
+        >
+        <span
+          class="draggable"
+          draggable="true"
+          ondragstart="drag(event)"
+          id="menor_que"
+          data-category="comparadores"
+          ><</span
+        >
+        <span
+          class="draggable"
+          draggable="true"
+          ondragstart="drag(event)"
+          id="igual_igual"
+          data-category="comparadores"
+          >==</span
+        >
+        <span
+          class="draggable"
+          draggable="true"
+          ondragstart="drag(event)"
+          id="diferente_que"
+          data-category="comparadores"
+          >!=</span
+        >
+      </div>
+
+      <!-- Contenedor flex -->
+      <div
+        class="d-flex justify-content-around align-items-center shadow p-4 content-boxes mb-5 mt-2"
+      >
+        <div
+          class="box bg-light border border-gray shadow dropzone"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+          data-target="bucles"
+        >
+          <h5 class="fw-bold text-black">Bucles</h5>
+        </div>
+        <div
+          class="box bg-light border border-gray shadow dropzone"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+          data-target="condicionales"
+        >
+          <h5 class="fw-bold text-black">Condicionales</h5>
+        </div>
+        <div
+          class="box bg-light border border-gray shadow dropzone"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+          data-target="logicos"
+        >
+          <h5 class="fw-bold text-black">Lógicos</h5>
+        </div>
+        <div
+          class="box bg-light border border-gray shadow dropzone"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+          data-target="comparadores"
+        >
+          <h5 class="fw-bold text-black">Comparación</h5>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
